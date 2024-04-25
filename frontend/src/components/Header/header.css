@@ -1,0 +1,11 @@
+.app-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app-header--nav {
+  display: flex;
+  gap: 10px;
+}

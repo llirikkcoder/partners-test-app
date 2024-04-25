@@ -1,0 +1,108 @@
+.profile-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.profile-details img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3cb300;
+}
+
+.profile-details .details {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.details p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #495057;
+}
+
+.upload-image {
+  margin-top: 10px;
+}
+
+.upload-image-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+button,
+input[type='submit'],
+label[for='profile-upload'] {
+  background-color: #3cb300;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+input[type='submit']:hover,
+label[for='profile-upload']:hover {
+  background-color: #3cb300;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='file'] {
+  padding: 8px;
+  padding-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: calc(100% - 16px);
+}
+
+input[type='file'] {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+label[for='profile-upload'] {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Reveal the real input when the label is focused */
+label[for='profile-upload']:focus + input[type='file'] {
+  opacity: 1;
+}
